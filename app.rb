@@ -7,11 +7,12 @@ class App < Sinatra::Base
   end
 
   get '/hometown' do
-    @hometown = Hometown.all
-    erb :'hometown/index.html.erb'
+  "hometown"
+  200
   end
 
   get '/favorite-song' do
-    "Hello, World!"
+    "favorite-song"
+    200
   end
 end
